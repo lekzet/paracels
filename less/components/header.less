@@ -1,0 +1,175 @@
+.header {
+    background-color: #0387a7;
+}
+
+.header--absolute {
+    position: absolute;
+    z-index: 100;
+    min-width: 100%;
+    background-color: transparent;
+}
+
+.header-top {
+    min-height: 50px;
+    padding: 15px 0;
+    
+    &__left {
+        float: left;
+        width: 220px;
+        height: 50px;
+    }
+    
+    &__logo {
+        display: block;
+        img {
+            width: 220px;
+            height: 50px;
+        }
+        &:hover {
+            filter: drop-shadow(0 0 5px rgba(84,207,41,.4));
+        }
+        &:active {
+            opacity: .8;
+        }
+    }
+    
+    &__right {
+        float: right;
+        max-width: 450px;
+        text-align: right;
+        line-height: 25px;
+    }
+    
+    &__phone,
+    &__mail,
+    &__address {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 16px;
+        color: #fff;
+    }
+    
+    &__phone {
+        margin-right: 10px;
+        font-size: 16px;
+        font-weight: @black;
+        &::before {
+            content:'';
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            margin-top: -8px;
+            width: 12px;
+            height: 16px;
+            background: url('../img/icon-phone.png') no-repeat center;
+        }
+    }
+    
+    &__mail,
+    &__address {
+        margin-left: 30px;
+        font-size: 14px;
+        border-bottom: 1px solid rgba(255,255,255,.5);
+        transition: .3s;
+        &:hover {
+            border-bottom: 1px solid transparent;
+        }
+        &:active {
+            opacity: .8;
+        }
+    }
+    
+    &__mail::before {
+        content:'';
+        position: absolute;
+        left: -22px;
+        top: 50%;
+        margin-top: -6px;
+        width: 15px;
+        height: 12px;
+        background: url('../img/icon-mail.png') no-repeat center;
+        pointer-events: none;
+    }
+    
+    &__address::before {
+        content:'';
+        position: absolute;
+        left: -16px;
+        top: 50%;
+        margin-top: -8px;
+        width: 10px;
+        height: 16px;
+        background: url('../img/icon-address.png') no-repeat center;
+        pointer-events: none;
+    }
+}
+
+.header-nav {
+    border-top: 1px solid rgba(255,255,255,.5);
+    border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+.header-nav__menu {
+    margin: 0;
+    margin-left: -25px;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+    
+    li {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        transition: .3s;
+        &:hover {
+            background-color: #54cf29;
+        }
+        &.active {
+            background-color: #41b718;
+            pointer-events: none;
+        }
+    }
+    
+    a {
+        display: block;
+        padding: 15px 25px;
+        font-size: 14px;
+        line-height: 26px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+
+.header-nav__submenu {
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #54cf29;
+    transition: .3s;
+    
+    li {
+        display: block;
+        &:hover {
+            background-color: #41b718;
+        }
+    }
+    
+    a {
+        display: block;
+        padding: 5px 25px;
+        font-size: 14px;
+        line-height: 26px;
+        text-transform: none;
+    }
+}
+
+.header-nav__menu li:hover .header-nav__submenu {
+    padding: 10px 0;
+    max-height: 200px;
+}

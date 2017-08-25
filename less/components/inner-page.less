@@ -1,0 +1,340 @@
+.inner-page {
+    padding: 70px 0;
+}
+
+//----------------------------------------about
+
+.about {
+    
+}
+
+.about__img {
+    padding: 30px 0;
+}
+
+.rewards {
+    font-size: 0;
+    //outline: 1px solid;
+}
+
+.rewards__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    margin: 40px;
+    margin-top: 10px;
+    margin-left: 0;
+    
+    &:nth-of-type(3n) {
+        margin-right: 0;
+    }
+    
+    img {
+        width: 300px;
+    }
+}
+
+.license {
+    margin-top: 60px;
+    margin-left: -25px;
+    margin-right: -25px;
+        //outline: 1px solid red;
+}
+
+.license__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 270px;
+    margin-right: 100px;
+    margin-bottom: 60px;
+    text-align: center;
+        //outline: 1px solid;
+    
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+    
+    img {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        width: 190px;
+        height: 270px;
+        transition: .3s;
+    }
+    
+    span {
+        color: #0387a7;
+        border-bottom: 1px solid rgba(3,135,167,.5);
+        transition: .3s;
+    }
+    
+    &:hover img {
+        transform: scale(.98);
+    }
+    
+    &:hover span {
+        border-bottom: 1px solid transparent;
+    }
+}
+
+//----------------------------------------services
+
+.services {
+    
+}
+
+.services-img {
+    margin-bottom: 35px;
+    width: 979px;
+    height: 212px;
+    
+    img {
+        width: 979px;
+        height: 212px;
+        border-radius: 3px;
+    }
+}
+
+.services-l-col {
+    float: left;
+    width: 450px;
+        //outline: 1px solid;
+}
+
+.services-r-col {
+    float: right;
+    width: 450px;
+        //outline: 1px solid;
+}
+
+.services__item {
+    margin-bottom: 50px;
+}
+
+.services-pricelink {
+    position: relative;
+    margin: 50px 0;
+    padding-top: 35px;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100px;
+        height: 2px;
+        background-color: #54cf29;
+    }
+    
+    &__btn {
+        vertical-align: middle;
+        margin-left: 15px;
+    }
+}
+
+//----------------------------------------inspection
+
+.inspection {
+    
+}
+
+.inspection__item {
+    margin: 50px 0;
+}
+
+.inspection__img {
+    float: left;
+    width: 186px;
+        //outline: 1px solid;
+    
+    img {
+        width: 186px;
+        height: 160px;
+    }
+}
+
+.inspection__txt {
+    float: right;
+    width: 760px;
+        //outline: 1px solid;
+    
+    .title {
+        margin-top: -7px;
+    }
+    
+    .mark {
+        display: block;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: @bold;
+        color: #0387a7;
+    }
+}
+
+//----------------------------------------price
+
+.price {
+    width: 820px;
+}
+
+.table {
+    display: table;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 50px;
+    border-collapse: collapse;
+        //outline: 1px solid red;
+}
+
+.table__row {
+    display: table-row;
+}
+
+.table__cell {
+    display: table-cell;
+    padding: 5px 30px;
+    border: 1px solid #e7e7e7;
+}
+
+.table__header {
+    display: table-header-group;
+}
+
+.table__header .table__cell {
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: @bold;
+    text-transform: uppercase;
+    color: #a9a9a9;
+    border: 1px solid #dedede;
+}
+
+//----------------------------------------registry
+
+.registry {
+    width: 820px;
+    
+    .title {
+        margin-top: 0;
+    }
+}
+
+.registry__wrapper {
+    margin-bottom: 60px;
+}
+
+.registry__tel {
+    float: left;
+    width: 390px;
+        //outline: 1px solid;
+}
+
+.registry__date {
+    float: right;
+    width: 350px;
+        //outline: 1px solid;
+}
+
+.registry span {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.registry .blue {
+    color: #0387a7;
+}
+
+.registry .red {
+    color: #cf2929;
+}
+
+//----------------------------------------job
+
+.job {
+    
+}
+
+.job-img {
+    margin-top: -25px;
+    margin-bottom: -15px;
+    width: 979px;
+    height: 212px;
+    
+    img {
+        width: 979px;
+        height: 212px;
+        border-radius: 3px;
+    }
+}
+
+.job-contacts {
+    margin-top: 50px;
+    line-height: 35px;
+    
+    .mark {
+        color: #0387a7;
+    }
+}
+
+//----------------------------------------contacts
+
+.contacts {
+    .title {
+        margin-top: 0;
+    }
+}
+
+.contacts__item {
+    margin-bottom: 40px;
+        //outline: 1px solid;
+    
+    &:nth-of-type(1) {
+        display: inline-block;
+        vertical-align: top;
+        padding-right: 120px;
+    }
+    
+    &:nth-of-type(2) {
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 0;
+    }
+    
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.contacts__subtitle {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: @bold;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.contacts__text {
+    margin: 0;
+    font-size: 18px;
+    
+    .link {
+        display: inline-block;
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+    
+    .blue {
+        color: #0387a7;
+    }
+    
+    .red {
+        color: #cf2929;
+    }
+    
+    img {
+        display: inline-block;
+        vertical-align: baseline;
+    }
+}

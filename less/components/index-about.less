@@ -1,0 +1,47 @@
+.index-about {
+    padding: 85px 0;
+    min-height: 385px;
+    background: #eee url(../img/bg-about.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.index-about__img {
+    float: left;
+    width: 250px;
+    margin-right: 80px;
+}
+
+.index-about__text {
+    float: left;
+    width: 650px;
+}
+
+.index-about__title {
+    position: relative;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: -37px;
+        width: 25px;
+        height: 20px;
+        background: url('../img/icon-quote.png') no-repeat;
+    }
+    
+    span {
+        display: block;
+        margin-top: 10px;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: @regular;
+        text-transform: none;
+        color: #0387a7;
+    }
+
+}
+
+.index-about__details {
+    margin: 0;
+    margin-bottom: 35px;
+}
